@@ -1,24 +1,18 @@
 package sorting;
 
-import java.util.Arrays;
-
 public class SelectionSort {
 	public int[] sort(int[] list) {
 		int i;
 		for (i = 0; i <= list.length - 1; i++) {
 			int newMinPos = findNextMinPos(list, i);
 			if (newMinPos != i) {
-				swap(list, i, newMinPos);
+				ArrUtils.swap(list, i, newMinPos);
 			}
+			ArrUtils.printArray(list);
 		}
 		return list;
 	}
 
-	private void swap(int[] arr, int i, int j) {
-		int temp = arr[j];
-		arr[j] = arr[i];
-		arr[i] = temp;
-	}
 
 	private int findNextMinPos(int[] arr, int pos) {
 		int minVal = arr[pos];
@@ -34,9 +28,9 @@ public class SelectionSort {
 	public static void main(String[] args) {
 		SelectionSort x = new SelectionSort();
 		int[] testList = { 7, 8, 5, 8, 9, 2 };
-		System.out.println(Arrays.toString(testList));
+		ArrUtils.printArray(testList);
 		int[] testlist = x.sort(testList);						
-		System.out.println(Arrays.toString(testlist));
+		ArrUtils.printArray(testList);
 		System.out.println("Done.");
 
 	}
