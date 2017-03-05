@@ -1,5 +1,7 @@
 package sorting;
 
+import java.util.Arrays;
+
 public class SelectionSort {
 	public int[] sort(int[] list) {
 		int i;
@@ -32,7 +34,9 @@ public class SelectionSort {
 	public static void main(String[] args) {
 		SelectionSort x = new SelectionSort();
 		int[] testList = { 7, 8, 5, 8, 9, 2 };
-		testList = x.sort(testList);
+		System.out.println(Arrays.toString(testList));
+		int[] testlist = x.sort(testList);						
+		System.out.println(Arrays.toString(testlist));
 		System.out.println("Done.");
 
 	}
