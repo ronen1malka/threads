@@ -27,6 +27,7 @@ class Processor extends Thread {
 }
 
 public class App {
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		Processor proc = new Processor();
 		proc.start();
