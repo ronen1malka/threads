@@ -27,6 +27,8 @@ public class BinaryTree {
 	public static void main(String[] args) {
 		BinaryTree bst = new BinaryTree();
 		bst.AddNode("node 1", 50);
+		bst.AddNode("node 2", 70);
+		bst.AddNode("node 3", 20);
 	}
 
 }
