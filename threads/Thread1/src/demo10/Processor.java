@@ -2,7 +2,7 @@ package demo10;
 
 import java.util.LinkedList;
 import java.util.Random;
-
+// https://www.youtube.com/watch?v=wm1O8EE0X8k&list=PLBB24CFB073F1048E&index=9
 public class Processor {
 
 	private LinkedList<Integer> list = new LinkedList<Integer>();
